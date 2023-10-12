@@ -1,0 +1,60 @@
+
+GET http://localhost:8080/courses
+
+###
+
+GET http://localhost:8080/courses/175
+
+###
+
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "id": 20,
+  "name":"Mohit" ,
+  "city": "Delhi",
+  "country": "India",
+  "pincode": 110022,
+  "result" : "pass",
+  "score"  : 75
+}
+
+###
+
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "id": 40,
+  "name":"Rahul" ,
+  "city": "Mumbai",
+  "country": "India",
+  "pincode": 400092,
+  "result" : "pass",
+  "score"  : 60
+}
+
+###
+
+POST http://localhost:8080/courses
+Content-Type: application/json
+
+{
+  "id": 195,
+  "title": "Typescript",
+  "description": "This student will teach Typescript"
+}
+###
+
+DELETE http://localhost:8080/courses/175
+
+###
+PUT http://localhost:8080/courses
+Content-Type: application/json
+
+{
+    "id": 195,
+    "title": "Javascript",
+    "description": "This student will teach Javascript"
+}
